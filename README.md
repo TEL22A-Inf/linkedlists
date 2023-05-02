@@ -17,8 +17,9 @@ Es sind noch einige Implementierungen von Methoden/Funktionen zu vervollständig
 
 ## Erweiterung des Datentyps
 
-Fügen Sie weitere Methoden oder Funktionen hinzu, die mehr Abfragen oder Operationen
-ermöglichen.
+Fügen Sie weitere Methoden oder Funktionen hinzu,
+die mehr Abfragen oder Operationen ermöglichen.
+Fügen Sie auch entsprechende Tests hinzu, um die Funktionalität zu überprüfen.
 
 **Beispiele für `DLList`:**
 
@@ -50,3 +51,6 @@ dessen Elemente nicht nur Zahlen, sondern komplexere Werte enthalten.
 Auch wenn Sie vielleicht sofort eine Reihe an Ideen haben, sollten Sie zunächst
 nur das Minumum umsetzen, um die Funktionalität der Liste zu testen.
 Erweitern Sie Ihren Datentyp dann schrittweise um weitere Eigenschaften.
+
+*Hinweis:* Sie können die Lösung aus dem Package `dllist_int_solution` als Vorlage
+verwenden, um die Implementierung zu vereinfachen.
