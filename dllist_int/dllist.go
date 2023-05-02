@@ -42,6 +42,23 @@ func (l *DLList) PopFront() {
 	l.anchor.Next.Remove()
 }
 
+// Get expects an index and returns the value at that index.
+// If the index is out of bounds, it returns -1.
+func (l *DLList) Get(index int) int {
+	if index < 0 {
+		return -1
+	}
+	e := l.anchor.Next
+	for index > 0 && e != l.anchor {
+		e = e.Next
+		index--
+	}
+	if e == l.anchor {
+		return -1
+	}
+	return e.Value
+}
+
 // Swap expects two values, finds their corresponding elements and
 // swaps these elements by rewriting their Pointers.
 func (l *DLList) Swap(value1, value2 int) {
