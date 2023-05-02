@@ -1,5 +1,7 @@
 package dllist_int
 
+import "fmt"
+
 // DLLNode represents an element in a doubly linked list.
 type DLLNode struct {
 	Prev  *DLLNode
@@ -36,4 +38,9 @@ func (e *DLLNode) Remove() {
 	}
 	e.Prev.Next = e.Next
 	e.Next.Prev = e.Prev
+}
+
+// String returns a string representation of the element.
+func (e *DLLNode) String() string {
+	return fmt.Sprintf("%d ", e.Value)
 }
