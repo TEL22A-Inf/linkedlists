@@ -44,3 +44,23 @@ func (e *DLLNode) Remove() {
 func (e *DLLNode) String() string {
 	return fmt.Sprintf("%d", e.Value)
 }
+
+// swapNodes expects two element pointers and swaps these elements by rewriting their Pointers.
+func swapNodes(e1, e2 *DLLNode) {
+	// Before: A <-> e1 <-> B <-> ... <-> C <-> e2 <-> D
+	// After:  A <-> e2 <-> B <-> ... <-> C <-> e1 <-> D
+
+	A := e1.Prev
+	B := e1.Next
+	C := e2.Prev
+	D := e2.Next
+
+	A.Next = e2
+	e2.Prev = A
+	e2.Next = B
+	B.Prev = e2
+	C.Next = e1
+	e1.Prev = C
+	e1.Next = D
+	D.Prev = e1
+}
