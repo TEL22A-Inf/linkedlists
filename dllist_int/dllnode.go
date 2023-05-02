@@ -42,5 +42,5 @@ func (e *DLLNode) Remove() {
 
 // String returns a string representation of the element.
 func (e *DLLNode) String() string {
-	return fmt.Sprintf("%d ", e.Value)
+	return fmt.Sprintf("%d", e.Value)
 }
