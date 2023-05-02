@@ -64,8 +64,12 @@ func (l *DLList) Get(index int) int {
 func (l *DLList) Swap(value1, value2 int) {
 	// TODO
 
-	// Hinweis: Verwenden Sie die Methode Get(), um die Elemente zu finden.
+	// Hinweis: Verwenden Sie den gleichen Ansatz wie bei Get(), um die Elemente zu finden.
 	// Verwenden Sie dann die Funktion swapDLLNodes(), um die Pointer zu tauschen.
+
+	// Anmerkung: Es bietet sich an, eine Hilfsfunktion zu schreiben, die einen Index
+	// erwartet und einen Pointer auf das entsprechende Element zurückgibt.
+	// Diese Funktion können Sie dann sowohl in Get() als auch in Swap() verwenden.
 }
 
 // String returns a string representation of the list.
