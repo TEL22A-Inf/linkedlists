@@ -50,17 +50,8 @@ func swapNodes(e1, e2 *DLLNode) {
 	// Before: A <-> e1 <-> B <-> ... <-> C <-> e2 <-> D
 	// After:  A <-> e2 <-> B <-> ... <-> C <-> e1 <-> D
 
-	A := e1.Prev
-	B := e1.Next
-	C := e2.Prev
-	D := e2.Next
-
-	A.Next = e2
-	e2.Prev = A
-	e2.Next = B
-	B.Prev = e2
-	C.Next = e1
-	e1.Prev = C
-	e1.Next = D
-	D.Prev = e1
+	// TODO
+	// Geben Sie jeweils dem Vorgänger und Nachfolger von e1 und e2 einen Namen
+	// in Form einer eigenen Variable. Dadurch behalten Sie leichter den Überblick,
+	// welcher Pointer wohin zeigen muss.
 }

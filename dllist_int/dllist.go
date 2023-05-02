@@ -27,50 +27,45 @@ func (l *DLList) PushBack(value int) {
 
 // PushFront adds a new element at the beginning of the list.
 func (l *DLList) PushFront(value int) {
-	l.anchor.Insert(value)
+	// TODO
+
+	// Hinweis: Sie können sich an der Methode PushBack() orientieren.
 }
 
 // PopBack removes the last element from the list.
 // If the list is empty, nothing happens.
 func (l *DLList) PopBack() {
-	l.anchor.Prev.Remove()
+	// TODO
+
+	// Hinweis: Sie können sich an der Methode PushBack() orientieren.
 }
 
 // PopFront removes the first element from the list.
 // If the list is empty, nothing happens.
 func (l *DLList) PopFront() {
-	l.anchor.Next.Remove()
+	// TODO
+
+	// Hinweis: Sie können sich an der Methode PushBack() orientieren.
 }
 
 // Get expects an index and returns the value at that index.
 // If the index is out of bounds, it returns -1.
 func (l *DLList) Get(index int) int {
-	if index < 0 {
-		return -1
-	}
-	e := l.anchor.Next
-	for index > 0 && e != l.anchor {
-		e = e.Next
-		index--
-	}
-	if e == l.anchor {
-		return -1
-	}
-	return e.Value
+	// TODO
+
+	// Hinweis: Schreiben Sie eine Schleife, beim Anker beginnend index mal
+	// von Element zu Element springt.
+	// Sie können Sich an der String()-Methode orientieren.
+	return -1
 }
 
 // Swap expects two values, finds their corresponding elements and
 // swaps these elements by rewriting their Pointers.
 func (l *DLList) Swap(value1, value2 int) {
-	e1 := l.anchor.Next
-	for e1 != l.anchor && e1.Value != value1 {
-		e1 = e1.Next
-	}
-	e2 := l.anchor.Next
-	for e2 != l.anchor && e2.Value != value2 {
-		e2 = e2.Next
-	}
-	swapNodes(e1, e2)
+	// TODO
+
+	// Hinweis: Verwenden Sie die Methode Get(), um die Elemente zu finden.
+	// Verwenden Sie dann die Funktion swapDLLNodes(), um die Pointer zu tauschen.
 }
 
 // String returns a string representation of the list.
