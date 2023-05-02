@@ -14,3 +14,20 @@ Es sind noch einige Implementierungen von Methoden/Funktionen zu vervollständig
 * Die Methode `Swap`aus dem Datentyp `DLList` soll zwei Knoten aus der Liste vertauschen.
 
 *Hinweis*: Im Package `dllist_int_solution' ist eine Lösung zu finden.
+
+## Erstellung einer Liste für einen komplexeren Datentyp
+
+Erstellen Sie auf Basis des Packages `dllist_int` ein Package für einen Listen-Datentyp,
+dessen Elemente nicht nur Zahlen, sondern komplexere Werte enthalten.
+
+**Einfache Beispiele/Ideen für Daten anstelle von Zahlen:**
+
+* Einträge in einem Telefonbuch mit Namen, Telefon, E-Mail, ...
+* Artikel mit Artikelnummer, Bezeichnung, Preis, ...
+* Kinofilme mit Titel, Erscheinungsjahr, Genre, Bewertungen ...
+* Personen in einem sozialen Netzwerk mit Name sowie jeweils einer Liste von Freunden.
+
+*Hinweis:* Achten Sie darauf, Ihren Datentyp zunächst möglichst einfach zu halten.
+Auch wenn Sie vielleicht sofort eine Reihe an Ideen haben, sollten Sie zunächst
+nur das Minumum umsetzen, um die Funktionalität der Liste zu testen.
+Erweitern Sie Ihren Datentyp dann schrittweise um weitere Eigenschaften.
