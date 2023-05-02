@@ -42,6 +42,20 @@ func (l *DLList) PopFront() {
 	l.anchor.Next.Remove()
 }
 
+// Swap expects two values, finds their corresponding elements and
+// swaps these elements by rewriting their Pointers.
+func (l *DLList) Swap(value1, value2 int) {
+	e1 := l.anchor.Next
+	for e1 != l.anchor && e1.Value != value1 {
+		e1 = e1.Next
+	}
+	e2 := l.anchor.Next
+	for e2 != l.anchor && e2.Value != value2 {
+		e2 = e2.Next
+	}
+	swapNodes(e1, e2)
+}
+
 // String returns a string representation of the list.
 func (l *DLList) String() string {
 	valuestrings := []string{}
